@@ -14,6 +14,7 @@ import android.graphics.drawable.Icon;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Person;
+import android.util.Log;
 
 import com.google.gson.*;
 import com.bumptech.glide.Glide;
@@ -129,6 +130,8 @@ public class CustomPushNotification extends PushNotification {
                 .submit(100, 100)
                 .get();
         } catch (final ExecutionException | InterruptedException e) {
+            Log.d("reactnative","check this");
+            Log.e("reactnative",e.getMessage());
             return largeIcon();
         }
     }
@@ -136,8 +139,9 @@ public class CustomPushNotification extends PushNotification {
     private Bitmap largeIcon() {
         final Resources res = mContext.getResources();
         String packageName = mContext.getPackageName();
-        int largeIconResId = res.getIdentifier("ic_launcher", "mipmap", packageName);
+        int largeIconResId = res.getIdentifier("ic_notification", "drawable", packageName);
         Bitmap largeIconBitmap = BitmapFactory.decodeResource(res, largeIconResId);
+
         return largeIconBitmap;
     }
 
@@ -145,7 +149,7 @@ public class CustomPushNotification extends PushNotification {
         final Resources res = mContext.getResources();
         String packageName = mContext.getPackageName();
 
-        int smallIconResId = res.getIdentifier("ic_notification", "mipmap", packageName);
+        int smallIconResId = res.getIdentifier("ic_notification", "drawable", packageName);
 
         Gson gson = new Gson();
         Ejson ejson = gson.fromJson(bundle.getString("ejson", "{}"), Ejson.class);
@@ -233,7 +237,8 @@ public class CustomPushNotification extends PushNotification {
                     String avatarUri = data.getString("avatarUri");
 
                     String m = extractMessage(message, ejson);
-
+                    Log.d("reactnative",data.toString());
+                    Log.d("reactnative",avatarUri);
                     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
                         messageStyle.addMessage(m, timestamp, username);
                     } else {

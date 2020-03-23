@@ -2,5 +2,5 @@
 <resources>
 	<color name="primary_dark">#660B0B0B</color>
 	<item name="splashBackground" type="color">#2F3234</item>
-	<item name="notification_text" type="color">#CC3333</item>
+	<item name="notification_text" type="color">#6A7074</item>
 </resources>
