@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-	Text, View, TouchableOpacity, Image, StyleSheet
+	Text, View, StyleSheet, TouchableOpacity
 } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -49,19 +49,21 @@ const HeaderTitle = React.memo(({ connecting, isFetching, theme }) => {
 });
 
 const Header = React.memo(({
-	connecting, isFetching, serverName, showServerDropdown, onPress, theme
+	connecting, isFetching, theme
 }) => (
 	<View style={styles.container}>
 		<TouchableOpacity
-			onPress={onPress}
 			testID='rooms-list-header-server-dropdown-button'
 			style={styles.container}
 			disabled={connecting || isFetching}
 		>
 			<HeaderTitle connecting={connecting} isFetching={isFetching} theme={theme} />
 			<View style={styles.button}>
-				<Text style={[styles.server, { color: themes[theme].headerTintColor }]}>{serverName}</Text>
-				<Image style={[styles.disclosure, showServerDropdown && styles.upsideDown]} source={{ uri: 'disclosure_indicator_server' }} />
+				{
+				// <Text style={[styles.server, { color: themes[theme].headerTintColor }]}>{serverName}</Text>
+				//				<Image style={[styles.disclosure, showServerDropdown && styles.upsideDown]} source={{ uri: 'disclosure_indicator_server' }} />
+
+			}
 			</View>
 		</TouchableOpacity>
 	</View>

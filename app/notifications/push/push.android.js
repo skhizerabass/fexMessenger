@@ -8,6 +8,7 @@ class PushNotification {
 
 		NotificationsAndroid.setRegistrationTokenUpdateListener((deviceToken) => {
 			this.deviceToken = deviceToken;
+			console.warn(deviceToken);
 		});
 
 		NotificationsAndroid.setNotificationOpenedListener((notification) => {
@@ -16,6 +17,7 @@ class PushNotification {
 	}
 
 	getDeviceToken() {
+		console.count(this.deviceToken)
 		return this.deviceToken;
 	}
 

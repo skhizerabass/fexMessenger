@@ -54,7 +54,7 @@ export default class Button extends React.PureComponent {
 					styles.container,
 					backgroundColor
 						? { backgroundColor }
-						: { backgroundColor: isPrimary ? themes[theme].actionTintColor : themes[theme].backgroundColor },
+						: { backgroundColor: isPrimary ? themes[theme].actionButtonColor : themes[theme].backgroundColor },
 					disabled && { backgroundColor: themes[theme].borderColor },
 					style
 				]}
@@ -62,13 +62,13 @@ export default class Button extends React.PureComponent {
 			>
 				{
 					loading
-						? <ActivityIndicator color={isPrimary ? themes[theme].buttonText : themes[theme].actionTintColor} />
+						? <ActivityIndicator color={isPrimary ? themes[theme].buttonText : themes[theme].actionButtonColor} />
 						: (
 							<Text
 								style={[
 									styles.text,
 									isPrimary ? sharedStyles.textMedium : sharedStyles.textBold,
-									{ color: isPrimary ? themes[theme].buttonText : themes[theme].actionTintColor }
+									{ color: isPrimary ? themes[theme].buttonText : themes[theme].actionButtonColor }
 								]}
 							>
 								{title}

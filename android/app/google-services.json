@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "115198584049",
-    "firebase_url": "https://rocketchat-reactnative-test.firebaseio.com",
-    "project_id": "rocketchat-reactnative-test",
-    "storage_bucket": "rocketchat-reactnative-test.appspot.com"
+    "project_number": "671811417344",
+    "firebase_url": "https://fexmessenger-1ba0c.firebaseio.com",
+    "project_id": "fexmessenger-1ba0c",
+    "storage_bucket": "fexmessenger-1ba0c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:115198584049:android:8be27b1f7c42a2ed",
+        "mobilesdk_app_id": "1:671811417344:android:1749d83e4e3b6981e56fe5",
         "android_client_info": {
-          "package_name": "chat.rocket.reactnative"
+          "package_name": "com.fieldexpert.messenger"
         }
       },
       "oauth_client": [
         {
-          "client_id": "115198584049-ack609b1338b827fta26s9rd2ab1aad5.apps.googleusercontent.com",
+          "client_id": "671811417344-obpe26u157ibrol5vq1pbvohf18qnl62.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAWwowhAfACHBw3YxmDOXY3QyakgjhJLqc"
+          "current_key": "AIzaSyBPjUjBhxjF6LXpSKciGXlLyFkiAyd67SI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "115198584049-ack609b1338b827fta26s9rd2ab1aad5.apps.googleusercontent.com",
+              "client_id": "671811417344-obpe26u157ibrol5vq1pbvohf18qnl62.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

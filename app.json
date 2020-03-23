@@ -1,5 +1,7 @@
 {
   "name": "RocketChatRN",
   "share": "ShareRocketChatRN",
-  "displayName": "RocketChatRN"
+  "displayName": "RocketChatRN",
+  "server": "https://messenger.fieldexpert.eu"
+
 }

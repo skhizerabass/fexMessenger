@@ -18,7 +18,7 @@ const CallButton = React.memo(({
 			<Touchable
 				onPress={callJitsi}
 				background={Touchable.Ripple(themes[theme].bannerBackground)}
-				style={[styles.button, styles.smallButton, { backgroundColor: themes[theme].tintColor }]}
+				style={[styles.button, styles.smallButton, { backgroundColor: themes[theme].secondaryTintColor }]}
 				hitSlop={BUTTON_HIT_SLOP}
 			>
 				<>

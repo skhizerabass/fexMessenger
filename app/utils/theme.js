@@ -12,7 +12,7 @@ export const defaultTheme = () => {
 	if (systemTheme && systemTheme !== 'no-preference') {
 		return systemTheme;
 	}
-	return 'light';
+	return 'dark';
 };
 
 export const getTheme = (themePreferences) => {
@@ -21,7 +21,7 @@ export const getTheme = (themePreferences) => {
 	if (currentTheme === 'automatic') {
 		theme = defaultTheme();
 	}
-	return theme === 'dark' ? darkLevel : 'light';
+	return theme === 'dark' ? darkLevel : 'dark';
 };
 
 export const newThemeState = (prevState, newTheme) => {

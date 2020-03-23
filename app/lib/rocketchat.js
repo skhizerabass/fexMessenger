@@ -477,6 +477,7 @@ const RocketChat = {
 	registerPushToken() {
 		return new Promise(async(resolve) => {
 			const token = getDeviceToken();
+			console.log(token);
 			if (token) {
 				const type = isIOS ? 'apn' : 'gcm';
 				const data = {
@@ -496,6 +497,7 @@ const RocketChat = {
 	},
 	removePushToken() {
 		const token = getDeviceToken();
+		console.count('DEVICETOKEN '+token);
 		if (token) {
 			// RC 0.60.0
 			return this.sdk.del('push.token', { token });

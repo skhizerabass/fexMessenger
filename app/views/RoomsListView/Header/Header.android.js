@@ -61,7 +61,6 @@ const Header = React.memo(({
 	return (
 		<View style={styles.container}>
 			<TouchableOpacity
-				onPress={onPress}
 				testID='rooms-list-header-server-dropdown-button'
 				disabled={connecting || isFetching}
 			>
@@ -69,14 +68,7 @@ const Header = React.memo(({
 				{isFetching ? <Text style={[styles.updating, titleColorStyle]}>{I18n.t('Updating')}</Text> : null}
 				<View style={styles.button}>
 					<Text style={[styles.server, isFetching && styles.serverSmall, titleColorStyle]}>{serverName}</Text>
-					<Image
-						style={[
-							styles.disclosure,
-							showServerDropdown && styles.upsideDown,
-							{ tintColor: themes[theme].headerTitleColor }
-						]}
-						source={{ uri: 'disclosure_indicator_server' }}
-					/>
+				
 				</View>
 			</TouchableOpacity>
 		</View>
