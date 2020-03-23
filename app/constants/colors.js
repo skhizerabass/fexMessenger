@@ -67,7 +67,7 @@ export const themes = {
 		infoText: '#6D6D72',
 		tintColor: '#FFFFFF',
 		secondaryTintColor: '#6A7074',
-		actionButtonColor:'#6A7074',
+		actionButtonColor: '#6A7074',
 		auxiliaryTintColor: '#cdcdcd',
 		actionTintColor: '#FFFFFF',
 		separatorColor: '#2b2b2d',
