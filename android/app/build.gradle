@@ -134,11 +134,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.fieldexpert.messenger"
+        applicationId "com.fieldexpert.fexmessenger"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode VERSIONCODE as Integer
-        versionName "4.6.0"
+        versionName "1.0"
         vectorDrawables.useSupportLibrary = true
         manifestPlaceholders = [BugsnagAPIKey: BugsnagAPIKey as String]
     }

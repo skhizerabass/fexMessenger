@@ -8,6 +8,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:671811417344:android:fdd9c274c79fd5fbe56fe5",
+        "android_client_info": {
+          "package_name": "com.fieldexpert.fexmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671811417344-obpe26u157ibrol5vq1pbvohf18qnl62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPjUjBhxjF6LXpSKciGXlLyFkiAyd67SI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671811417344-obpe26u157ibrol5vq1pbvohf18qnl62.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:671811417344:android:1749d83e4e3b6981e56fe5",
         "android_client_info": {
           "package_name": "com.fieldexpert.messenger"
